@@ -1,8 +1,8 @@
-# Mangal House - Электронное меню ресторана
+# Appetito - Электронное меню ресторана
 
-![Mangal House Logo](https://img.shields.io/badge/Mangal%20House-Restaurant%20Menu-red?style=for-the-badge&logo=fire)
+![Appetito Logo](https://img.shields.io/badge/Appetito-Restaurant%20Menu-red?style=for-the-badge&logo=utensils)
 
-Современное электронное меню для ресторана Mangal House с аутентичной кухней на углях. Создано с использованием чистого HTML, CSS и JavaScript.
+Современное электронное меню для ресторана Appetito с аутентичной кухней и современным подходом. Создано с использованием чистого HTML, CSS и JavaScript.
 
 ## 🍽️ Особенности
 
@@ -53,7 +53,7 @@ php -S localhost:8000
 ## 📂 Структура проекта
 
 ```
-MangalHause/
+Appetito/
 ├── index.html          # Главная страница меню
 ├── styles.css          # Стили для меню
 ├── script.js           # JavaScript функциональность меню
@@ -197,15 +197,15 @@ MangalHause/
 
 ## 📞 Контакты
 
-**Mangal House**
+**Appetito**
 - 📍 Адрес: Москва, ул. Арбат, 25
 - 📞 Телефон: +7 (495) 123-45-67
 - 🕒 Часы работы: 12:00 - 24:00
 
 **Социальные сети:**
-- [Instagram](https://instagram.com/mangalhouse)
-- [Facebook](https://facebook.com/mangalhouse)
-- [Telegram](https://t.me/mangalhouse)
+- [Instagram](https://instagram.com/appetito)
+- [Facebook](https://facebook.com/appetito)
+- [Telegram](https://t.me/appetito)
 
 ## 🙏 Благодарности
 
@@ -218,4 +218,4 @@ MangalHause/
 
 ⭐ Если вам понравился проект, поставьте звезду!
 
-🍽️ Приятного аппетита в Mangal House!
+🍽️ Приятного аппетита в Appetito!
