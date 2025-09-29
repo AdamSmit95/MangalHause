@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangal House - Электронное меню</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-fire"></i>
+                    <h1>Mangal House</h1>
+                </div>
+                <nav class="nav">
+                    <button class="nav-btn active" data-category="all">Все блюда</button>
+                    <button class="nav-btn" data-category="appetizers">Закуски</button>
+                    <button class="nav-btn" data-category="mains">Основные блюда</button>
+                    <button class="nav-btn" data-category="grilled">Гриль</button>
+                    <button class="nav-btn" data-category="desserts">Десерты</button>
+                    <button class="nav-btn" data-category="drinks">Напитки</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="hero-section">
+                <h2>Добро пожаловать в Mangal House</h2>
+                <p>Аутентичная кухня на углях с современным подходом</p>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Закуски -->
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Хумус">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Хумус с питой</h3>
+                            <span class="price">450 ₽</span>
+                        </div>
+                        <p class="description">Домашний хумус с тахини, оливковым маслом и свежей питой</p>
+                        <div class="item-tags">
+                            <span class="tag vegetarian">Вегетарианское</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=300&fit=crop" alt="Табуле">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Табуле</h3>
+                            <span class="price">380 ₽</span>
+                        </div>
+                        <p class="description">Салат из булгура с помидорами, огурцами, мятой и петрушкой</p>
+                        <div class="item-tags">
+                            <span class="tag vegetarian">Вегетарианское</span>
+                            <span class="tag healthy">Полезное</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Основные блюда -->
+                <div class="menu-item" data-category="mains">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop" alt="Мансаф">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Мансаф</h3>
+                            <span class="price">850 ₽</span>
+                        </div>
+                        <p class="description">Традиционное иорданское блюдо с бараниной, рисом и джмеидом</p>
+                        <div class="item-tags">
+                            <span class="tag signature">Фирменное</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop" alt="Кебаб">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Кебаб по-турецки</h3>
+                            <span class="price">650 ₽</span>
+                        </div>
+                        <p class="description">Мясо на углях с овощами и турецким хлебом</p>
+                        <div class="item-tags">
+                            <span class="tag spicy">Острое</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Гриль -->
+                <div class="menu-item" data-category="grilled">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Шашлык">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Шашлык из баранины</h3>
+                            <span class="price">750 ₽</span>
+                        </div>
+                        <p class="description">Нежные кусочки баранины на углях с луком и специями</p>
+                        <div class="item-tags">
+                            <span class="tag popular">Популярное</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="grilled">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop" alt="Рыба гриль">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Рыба на гриле</h3>
+                            <span class="price">690 ₽</span>
+                        </div>
+                        <p class="description">Свежая рыба на углях с лимоном и травами</p>
+                        <div class="item-tags">
+                            <span class="tag healthy">Полезное</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Десерты -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Баклава">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Баклава</h3>
+                            <span class="price">320 ₽</span>
+                        </div>
+                        <p class="description">Слоеное тесто с орехами и медом</p>
+                        <div class="item-tags">
+                            <span class="tag sweet">Сладкое</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Пахлава">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Пахлава</h3>
+                            <span class="price">280 ₽</span>
+                        </div>
+                        <p class="description">Традиционная пахлава с фисташками</p>
+                        <div class="item-tags">
+                            <span class="tag signature">Фирменное</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Напитки -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Чай">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Турецкий чай</h3>
+                            <span class="price">150 ₽</span>
+                        </div>
+                        <p class="description">Традиционный турецкий чай в стакане</p>
+                        <div class="item-tags">
+                            <span class="tag hot">Горячий</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Айран">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-header">
+                            <h3>Айран</h3>
+                            <span class="price">200 ₽</span>
+                        </div>
+                        <p class="description">Освежающий кисломолочный напиток с солью</p>
+                        <div class="item-tags">
+                            <span class="tag cold">Холодный</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Mangal House</h3>
+                    <p>Аутентичная кухня на углях</p>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Москва, ул. Арбат, 25</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>12:00 - 24:00</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
