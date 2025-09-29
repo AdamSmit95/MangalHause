@@ -82,20 +82,6 @@ body {
     border-color: #e74c3c;
 }
 
-.nav-btn.back-btn {
-    background: #27ae60;
-    border-color: #27ae60;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.nav-btn.back-btn:hover {
-    background: #229954;
-    border-color: #229954;
-}
-
 /* Main content */
 .main {
     padding: 2rem 0;
